@@ -1,0 +1,99 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+:root {
+     --starColor: #d3d3d3;
+}
+
+body {
+     background-color: hsl(0, 0%, 90%);
+}
+
+.rating-section {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+}
+
+.rating {
+     display: flex;
+     flex-direction: column;
+     width: 300px;
+     height: 55vh;
+     min-width: 300px;
+     /* background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1) 90% ); */
+     /* background-image: radial-gradient( circle farthest-corner at 12.3% 19.3%,  rgba(85,88,218,1) 0%, rgba(95,209,249,1) 100.2% ); */
+     background-image: linear-gradient(65.5deg, rgba(23, 205, 205, 1) -15.1%, rgba(23, 25, 95, 1) 71.5%);
+     border: 1px solid black;
+     border-radius: 10px;
+     justify-content: space-evenly;
+     align-items: center;
+     box-shadow: -6px 6px 20px 0px #7a7a7a;
+}
+
+form {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     height: 50%;
+}
+
+input {
+     display: block;
+}
+
+.stars {
+     display: flex;
+}
+
+.stars i {
+     font-size: 30px;
+     color: var(--starColor);
+     cursor: pointer;
+     opacity: 50%;
+}
+
+.stars:hover i {
+     color: var(--starColor);
+     opacity: 100%;
+}
+
+.stars i:hover {
+     color: var(--starColor);
+     opacity: 100%;
+}
+
+.stars i:hover~i {
+     color: var(--starColor);
+     opacity: 50%;
+}
+
+
+.btn-grad {
+     background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%)
+}
+
+.btn-grad {
+     margin: 10px;
+     padding: 15px 45px;
+     text-align: center;
+     text-transform: uppercase;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: white;
+     /* box-shadow: 0 0 20px #eee; */
+     border-radius: 10px;
+     outline: noen;
+     display: block;
+}
+
+.btn-grad:hover {
+     background-position: right center;
+     /* change the direction of the change here */
+     color: #fff;
+     text-decoration: none;
+}

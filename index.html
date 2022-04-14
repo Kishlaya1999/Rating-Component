@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="style.css">
+     <script src="./script.js" defer></script>
+     <title>User Review</title>
+</head>
+
+<body>
+     <div class="rating-section ">
+          <div class="rating">
+               <div class="stars">
+                    <i id="first" onclick="one()" class="fa-solid fa-star"></i>
+                    <i id="second" onclick="two()" class="fa-solid fa-star"></i>
+                    <i id="third" onclick="three()" class="fa-solid fa-star"></i>
+                    <i id="fourth" onclick="four()" class="fa-solid fa-star"></i>
+                    <i id="fifth" onclick="five()" class="fa-solid fa-star"></i>
+               </div>
+               <form action="">
+                    <input style="display: none;" id="rate" type="number" maxlength="1" name="rating">
+                    <input class="btn-grad" type="submit" value="Submit">
+               </form>
+          </div>
+     </div>
+
+</body>
+
+</html>
